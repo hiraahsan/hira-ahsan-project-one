@@ -191,10 +191,14 @@ h3 {
     padding: 3% 1%;
 }
 
+.more-about {
+    margin-top: 4%;
+}
+
 .more-about-text {
     float: left;
     width: 70%;
-    padding: 3% 0;
+    padding: 3% 0 3% 3%;
     /* margin: 1% 2%; */
 }
 
@@ -206,7 +210,7 @@ h3 {
 
 .more-about .read-more {
     background: #116500;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     text-transform: uppercase;
     color: white;
     text-decoration-style: none;
@@ -214,7 +218,7 @@ h3 {
     font-weight: normal;
     text-align: center;
     line-height: 29px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 
 }
 
@@ -247,18 +251,33 @@ h3 {
 
 /* 2*2 section */
 
+.middle-section h4 {
+    font-size: 4.2rem;
+    padding-bottom: 2%;
+}
+
 .bobby-and-bella, .marco {
         background-color: #213C28;
+        /* padding: 25% 25%; */
         /* float: left; */
         /* width: 50%; */
 }
 
-.bobby-and-bella-text {
+.bobby-and-bella-text, .marco-text {
     float: left;
     width: 50%;
-    padding: 50px 20px;
+    padding: 7.5%;    
+/* margin: 5% 5%; */
+    /* padding: 8% 8%; */
+    /* margin: 0 auto; */
+    /* padding: 25% 25%; */
+    /* padding: 50px 20px; */
     /* text-align: center; */
 }   
+
+.bobby-and-bella-text p, .marco-text p {
+    margin-bottom: 5%;
+}
 
 .bobby-and-bella img {
     float: right;
@@ -274,7 +293,7 @@ h3 {
 }
 
 .marco-text {
-    padding: 10% 8%;
+    /* padding: 10% 8%; */
 
 }
 
@@ -313,6 +332,12 @@ h3 {
     /* margin-bottom: 5%; */
 }
 
+/* Hover states */
+
+.read-more:hover {
+    background: 
+}
+
 /* FOOTER STYLES */
 
 footer {
@@ -321,6 +346,8 @@ footer {
 
 footer h3 {
     color: white;
+    font-size: 2.5rem;
+
 }
 
 .footer-content {
@@ -366,6 +393,13 @@ input {
     padding: none;
 }
 
+@media (max-width: 1195px) {
+
+    .bobby-and-bella-text, .marco-text {
+        padding: 2.5%;}
+
+}
+
 @media (max-width: 900px) {
     html {
         font-size: 57.5%;
@@ -374,6 +408,10 @@ input {
         /* float: none; */
         /* text-align: center; */
     }
+
+     .bobby-and-bella-text, .marco-text {
+        padding: 2%;}
+    
 
     .more-about img {
         display: none;
@@ -515,7 +553,11 @@ header h2 {
     clear: both;    
     width: 100%;
     margin: 30px auto;
-    font-size: 3.2rem;
+    /* font-size: .2rem; */
+}
+
+h4 {
+    font-size: 4.2rem;
 }
 
 .icons .fas {
