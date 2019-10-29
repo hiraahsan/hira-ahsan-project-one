@@ -1,0 +1,559 @@
+/* ADD SNIPPETS */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0; } 
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* STYLING TO REMOVE MARGINS/TEXT DECORATIONS OR LIST STYLES */
+
+body, h1, h2, h3, h4, nav, header, ul, li, a, p {
+    margin: 0;
+    /* padding: 0; */
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+/* BASE STYLES */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    
+    color: white;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-image: url(assets/header-image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+nav {
+        padding-top: 25px;        
+
+}
+
+h1, h3, h4 {
+    font-family: 'Offside', cursive;
+        font-weight: normal;
+
+}
+
+h1 {
+    font-size: 2rem;
+    float: left;
+    padding-left: 6%;
+    /* padding-left: 68px;  */
+    /* font-weight: normal; */
+    /* width: 20%; */
+}
+
+h2 {
+    clear: both;
+    font-size: 6.88rem;
+    width: 35%;
+    padding-top: 70px;
+    line-height: 63.7px;
+    letter-spacing: 0.8px;;
+    padding-left: 30px;
+    font-weight: normal;
+}
+
+header ul {
+    float: right;
+    
+    
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+/* hidden icons */
+
+.hidden-icons .fab {
+    /* float: right; */
+    /* margin-bottom: 5px; */
+    /* padding-bottom: 5px; */
+    /* padding: 5px; */
+    /* display: inline; */
+}
+
+.hidden-icons {
+    /* position: relative; */
+}
+
+.hidden-icons i {
+    /* display: block; */
+    font-size: 3rem;
+    position: absolute;
+    /* top: 0;
+    right: 0; */
+}
+
+ .fa-twitter {
+    position: absolute;
+    top: 38%;
+    right: 3%;
+}
+
+.fa-snapchat-ghost {
+    position: absolute;
+    top: 32%;
+    right: 3%;
+}
+
+.fa-instagram {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+.fa-facebook-f {
+    position: absolute;
+    top: 26%;
+    right: 3%;
+}
+
+.fa-twitter, .fa-snapchat-ghost, .fa-facebook-f, .fa-instagram {
+ /* float: right;    */
+ /* margin-bottom: 5px; */
+}
+
+/* STYLING FOR FIRST SECTION (GALLERY) */
+
+.new-friends {
+    background: #D6F1E4;
+    color: #2C2D2C;
+}
+
+.new-friends h3 {
+    padding: 4% 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.gallery img {
+    width: calc(100% / 3);
+    /* margin: 0; */
+    float: left;
+    padding: 0 10px;
+}
+/* 
+.gallery img:nth-of-type(1), .gallery img:nth-of-type(3){
+    padding-left: 0px;
+}  */
+
+.more-about img {
+    float: left;
+    width: 30%;
+    padding: 30px 10px;
+}
+
+.more-about-text {
+    float: left;
+    width: 70%;
+    padding: 30px 0 30px 30px;
+    /* margin: 1% 2%; */
+}
+
+/* BUTTON STYLES  */
+
+.more-about .read-more {
+    background: #116500;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration-style: none;
+    font-family: 'Offside', cursive;
+    font-weight: normal;
+    text-align: center;
+    line-height: 29px;
+    margin-bottom: 40px;
+
+}
+
+/* make DRY */
+
+section .read-more {
+    background: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #116500;
+    text-decoration-style: none;
+    font-family: 'Offside', cursive;
+    font-weight: normal;
+    text-align: center;
+    line-height: 29px;
+    /* padding-top: 30px; */
+
+}
+
+section p {
+    margin-bottom: 30px;
+}
+
+/* STYLING FOR HEADING TAGS */
+
+h3 {
+    color: #116500;
+    /* text-align: center; */
+}
+
+/* 2*2 section */
+
+.bobby-and-bella, .marco {
+        background-color: #213C28;
+        /* float: left; */
+        /* width: 50%; */
+}
+
+.bobby-and-bella-text {
+    float: left;
+    width: 50%;
+    padding: 50px 20px;
+    /* text-align: center; */
+}   
+
+.bobby-and-bella img {
+    float: right;
+    width: 50%;
+    /* white-space: nowrap; */
+    /* overflow-x: scroll; */
+}
+
+.marco img, .marco-text {
+    float: left;
+    width: 50%;
+
+}
+
+.marco-text {
+    padding: 10% 8%;
+
+}
+
+/* icons styling */
+
+.icons {
+    background: #D6F1E4;
+    /* color: #116500; */
+    padding: 50px;    
+    color: #2C2D2C;
+    text-align: center;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+
+
+.icons h4 {
+    color: #116500;
+}
+
+.jobs, .gift, .events {
+    /* background: #D6F1E4; */
+    float: left;
+    width: 33%;
+}
+
+.fas {
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+}
+
+.fab {
+    font-size: 2rem;
+    /* line-height: 50pxs; */
+    /* margin-bottom: 5%; */
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background: #213C28;
+}
+
+footer h3 {
+    color: white;
+}
+
+.footer-content {
+    background-color: #213C28;
+    padding: 5% 2%;
+    /* text-align: center; */
+}
+
+.email {
+    float: left;
+    width: 27%;
+}
+
+.contact {
+    float: left;
+    width: 27%;
+}
+
+    .email, .contact, .footer-nav {
+        /* padding: 0 3%; */
+        margin: 0 3%;
+    }
+
+.footer-nav {
+    float: left;
+    width: 27%;
+    font-family: 'Offside', cursive;
+    text-transform: lowercase;
+    /* padding-top: 20px; */
+}
+
+.subscribe {
+    background: #2C2D2C;
+    padding: 5px 20px;
+    font-family: 'Offside', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+input {
+    margin: 0;
+    border: none;
+    padding: none;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 57.5%;
+    }
+    .footer-nav {
+        /* float: none; */
+        /* text-align: center; */
+    }
+
+    .more-about img {
+        display: none;
+    }
+
+    .more-about-text {
+        width: 100%;
+    }
+    .more-about .read-more {
+        /* text-align: center; */
+        /* margin: 0 auto; */
+    }
+
+    .bobby-and-bella-text, .marco-text {
+        padding: 3% 2%;
+    }
+
+    .footer-content {
+        padding: 3% 1%;
+    }
+
+    .email, .contact, .footer-nav {
+        /* padding: 0 3%; */
+        /* margin: 0 3%; */
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+
+span.read-more {
+    display: inline-block;
+    /* text-align: center; */
+}
+.more-about-text {
+    text-align: left;
+}
+
+.more-about {
+    text-align: center;
+}
+
+}
+
+@media (max-width: 780px) {
+
+    .new-friends img {
+        width: 50%;
+    }
+    .new-friends img:last-of-type {
+        float: none;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+
+    .bobby-and-bella-text, .bobby-and-bella img {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+
+
+    .marco img, .marco-text {
+    clear: float;
+    width: 100%;
+
+}
+
+.bobby-and-bella, .marco {
+    text-align: center;
+}
+
+
+    .bobby-and-bella-text, .marco-text {
+        /* margin-top: 50px; */
+        text-align: left;
+    }
+
+    .panda-image img {
+        /* position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10% auto; */
+        /* float: left; */
+        /* margin: 2%; */
+        /* right: 0; */
+        /* bottom: 0; */
+    }
+
+    .panda-image {
+        /* position: relative; */
+    }
+
+    .hidden-icons {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+header {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position-x: left 40%;
+}
+
+h1 {
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 0;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h2 {
+    padding: 30px 0;
+    width: 46%;
+    font-size: 6rem;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.more-about-text {
+    padding: 0;
+}
+
+.jobs, .gift, .events {
+    /* background: #D6F1E4; */
+    clear: both;    
+    width: 100%;
+    margin: 30px auto;
+    font-size: 3.2rem;
+}
+
+.icons .fas {
+        font-size: 5rem;
+
+}
+
+.email {
+    /* clear: both; */
+    width: 100%;
+    text-align: center;
+}
+
+input[type="email"] {
+    width: 90%;
+}
+
+.contact, .footer-nav {
+    width: calc(50% - 6%);
+    float: left;
+    margin-top: 30px;
+}
+
+.footer-nav ul{
+    text-align: right;
+}
+
+.contact p {
+    padding: 0;
+    margin: 0;
+}
+}
+@media (max-width: 500px) {
+header ul {
+    display: none;
+}
+
+h1 {
+    text-align: left;
+}
+
+nav .fa-bars {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav {
+    position: relative;
+}
+
+}
