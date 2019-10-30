@@ -12,6 +12,18 @@ body, h1, h2, h3, h4, nav, header, ul, li, a, p {
     margin: 0;
     /* padding: 0; */
 }
+/* 
+input[type="checkbox"]{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 50px;
+    width: 50px;}
+
+    input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+} */
 
 nav .fa-bars {
     display: none;
@@ -43,7 +55,6 @@ html {
 body {
     font-family: 'Barlow', sans-serif;
     font-size: 2rem;
-    
     color: white;
 }
 
@@ -55,8 +66,9 @@ body {
 /* HEADER STYLES */
 
 header {
-    background-image: url(assets/header-image.jpg);
-    height: 100vh;
+    background-image: url(assets/header-image-2.jpg);
+    height: 75vh;
+    max-width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -64,8 +76,13 @@ header {
 }
 
 nav {
-        padding-top: 25px;        
+    padding-top: 25px;     
+        text-shadow: 2px 2px black;
+}
 
+li:hover {
+    color: #116500;
+    /* text-shadow: 1px 1px white; */
 }
 
 h1, h3, h4 {
@@ -73,6 +90,47 @@ h1, h3, h4 {
         font-weight: normal;
 
 }
+
+.menu-toggle {
+    /* display: inline-block; */
+    /* position: fixed; */
+    /* right: 0; */
+    /* height: calc(75vh - 25px); */
+    /* box-sizing: border-box; */
+    /* width: 150px;
+    z-index:-1; */
+    /* transform: translateX(250px); */
+    /* transition: all 250ms ease-in-out;
+    background: black; */
+    /* display: none; */
+}
+
+.menu-toggle a {
+border-bottom: 1px solid grey;
+	display: inline-block;
+	font-size: 40px;
+	width: 100%;
+	padding: 20px;
+	transition: all 0.3s;}
+
+input[type="checkbox"]:checked + #sidebar {
+    /* transform: translateX(0); */
+    /* z-index: 10; */
+    right: 0;
+}
+
+.menu-toggle a {
+    padding: 3% 5%;
+}
+
+.menu-toggle li {
+    padding: 5%;
+}
+
+/* nav .fa-bars:hover .menu-toggle, 
+nav .fa-bars:focus .menu-toggle {
+    display: block;
+} */
 
 h1 {
     font-size: 2rem;
@@ -92,6 +150,26 @@ h2 {
     letter-spacing: 0.8px;;
     padding-left: 30px;
     font-weight: normal;
+}
+
+label[for="toggle"] {
+	/*position the menu so that it doesn't slide off screen when we open it*/
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	color: white;
+	z-index: 10;
+}
+
+#sidebar {
+	background: black;
+	position: fixed;
+	z-index: 10;
+	width: 30%; /*note how width and right are the same values*/
+	right: -30%; /* Off the screen as wide as you are */
+	top: 50px;
+	height: 100%;
+    transition: all 0.5s; 
 }
 
 header ul {
@@ -120,10 +198,18 @@ header ul li {
     /* position: relative; */
 }
 
+.hidden-icons i:hover {
+    color: #213C28;
+    /* background: white;; */
+    /* border: white 1px solid; */
+}
+
 .hidden-icons i {
     /* display: block; */
     font-size: 3rem;
     position: absolute;
+    text-shadow: 2px 2px black;
+    position: fixed;
     /* top: 0;
     right: 0; */
 }
@@ -222,6 +308,12 @@ h3 {
 
 }
 
+.more-about .read-more:hover {
+    background: white;
+    color: #116500;
+    border: 1px solid #116500;
+}
+
 /* make DRY */
 
 section .read-more {
@@ -238,6 +330,12 @@ section .read-more {
 
 }
 
+section .read-more:hover {
+    background: #116500;
+    color: white;
+    border: 1px solid white;
+}
+
 section p {
     /* margin-bottom: 30px; */
 }
@@ -248,6 +346,8 @@ h3 {
     color: #116500;
     /* text-align: center; */
 }
+
+
 
 /* 2*2 section */
 
@@ -309,6 +409,10 @@ h3 {
     /* float: left; */
 }
 
+.icons i:hover {
+    color: white;
+}
+
 
 
 .icons h4 {
@@ -348,6 +452,7 @@ footer h3 {
     color: white;
     font-size: 2.5rem;
 
+
 }
 
 .footer-content {
@@ -356,14 +461,15 @@ footer h3 {
     /* text-align: center; */
 }
 
+
 .email {
     float: left;
-    width: 27%;
+    width: 40%;
 }
 
 .contact {
     float: left;
-    width: 27%;
+    width: 24%;
 }
 
     .email, .contact, .footer-nav {
@@ -373,7 +479,7 @@ footer h3 {
 
 .footer-nav {
     float: left;
-    width: 27%;
+    width: 15%;
     font-family: 'Offside', cursive;
     text-transform: lowercase;
     /* padding-top: 20px; */
@@ -381,14 +487,19 @@ footer h3 {
 
 .subscribe {
     background: #2C2D2C;
+    border: none;
+    color: white;
     padding: 5px 20px;
     font-family: 'Offside', cursive;
     text-transform: uppercase;
     font-size: 1.5rem;
+    float: left;
 }
 
-input {
+input[type="email"] {
     margin: 0;
+    float: left;
+    width: 60%;
     border: none;
     padding: none;
 }
@@ -515,9 +626,9 @@ span.read-more {
 
 @media (max-width: 650px) {
 header {
-    height: 80vh;
+    height: 75vh;
     background-repeat: no-repeat;
-    background-position-x: left 40%;
+    /* background-position-x: left 50%; */
 }
 
 h1 {
@@ -601,14 +712,19 @@ h1 {
 
 nav .fa-bars {
     display: inline-block;
-    float: right;
+    /* float: right; */
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
 }
+
 
 nav {
     position: relative;
 }
 
+input[type="submit"] {
+    /* padding: 25% 25%; */
+    margin: 0 23.5%;
+}
 }

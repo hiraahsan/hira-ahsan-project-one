@@ -15,10 +15,25 @@
 </head>
 <body>
     <header>
+
         <div class="wrapper clearfix">
         <nav>
             <h1>Panda Sanctuary</h1>
-            <i class="fas fa-bars"></i>
+            <label for="toggle">
+            <!-- <a href=""> -->
+                <i class="fas fa-bars" aria-hidden="true"></i>
+
+            <!-- </a> -->
+        </label>
+        <input type="checkbox" id="toggle" name="toggle">
+                        <div id="sidebar" class="menu-toggle">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </div>
+
+        
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -50,17 +65,17 @@
                     Our New Friends
                 </h3>
                 <div class="gallery clearfix">
-                <img src="./assets/gallery-image-1.jpg" alt="">
-                <img src="./assets/gallery-image-2.jpg" alt="">
-                <img src="./assets/gallery-image-3.jpg" alt="">
+                <img src="./assets/gallery-image-1.jpg" alt="Panda eating plants.">
+                <img src="./assets/gallery-image-2.jpg" alt="Panda on log in forest.">
+                <img src="./assets/gallery-image-3.jpg" alt="Two pandas hugging each other.">
                 </div>
                 <!-- insert images here -->
                 <div class="more-about clearfix">
-                <img src="./assets/small-box.jpg" alt="">
+                <img src="./assets/small-box.jpg" alt="Panda climbed up on a tree, posing for the picture.">
                 <div class="more-about-text clearfix">
                 <h3>More about our park</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta vel non iusto id libero eum similique nisi earum exercitationem atque repellat sapiente maxime maiores beatae minus dicta tempore tenetur incidunt quam, commodi consectetur quasi mollitia hic. Quibusdam natus possimus molestias recusandae numquam eius deleniti eos quasi, beatae repellat omnis sed sint earum repudiandae molestiae quia hic minima placeat dolores.</p>
-                                <span class="read-more">read more</span>
+                                <span class="read-more"><a href="">read more</a></span>
 
                 </div>
 
@@ -74,7 +89,7 @@
                 <!-- <div class="wrapper"> -->
 
                     <!-- tried using wrapper, however image would be wrapped as well and not go to the edges. manually changed text with margin/padding -->
-                                    <div class="panda-image"><img src="./assets/right-image.jpg" alt=""></div>
+                                    <div class="panda-image"><img src="./assets/right-image.jpg" alt="Two pandas, rolling around playing. "></div>
                                     
 
                 <div class="bobby-and-bella-text">
@@ -83,19 +98,19 @@
                     <!-- add wrapper here?? -->
                 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum suscipit iste iusto nobis ipsam odit corrupti perferendis perspiciatis dolores ab. Quia explicabo assumenda magni totam vero laudantium quos, libero numquam?</p>
-                                <span class="read-more">read more</span>
+                                <span class="read-more"><a href="">read more</a></span>
                 </div>
 
 
             </div>
             <div class="marco clearfix">
-                <img src="./assets/left-image.jpg" alt="">
+                <img src="./assets/left-image.jpg" alt="Panda eating leaves">
 
                 <div class="marco-text">
                                                     <h4>Look at Marco now</h4>
 
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quo similique placeat est tempore ducimus! Veritatis excepturi, consequatur, quia delectus neque doloremque soluta quos deserunt vel quis voluptatum?</p>
-                                <span class="read-more">read more</span>
+                                <span class="read-more"><a href="">read more</a></span>
 
                 </div>
 </div>
@@ -126,7 +141,7 @@
             <div class="email clearfix">
                 <h3>Stay updated</h3>
                 <p>Subscribe to our newsletter to stay updated.</p>
-                <input type="email" placeholder="email address"> <span class="subscribe"><a href="">subscribe</a></span>
+                <input type="email" placeholder="email address"> <input type="submit" class="subscribe" name="subscribe" value="subscribe">
             </div>
             <div class="contact">
                 <h3>Contact</h3>
