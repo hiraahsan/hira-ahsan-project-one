@@ -91,22 +91,8 @@ h1, h3, h4 {
 
 }
 
-.menu-toggle {
-    /* display: inline-block; */
-    /* position: fixed; */
-    /* right: 0; */
-    /* height: calc(75vh - 25px); */
-    /* box-sizing: border-box; */
-    /* width: 150px;
-    z-index:-1; */
-    /* transform: translateX(250px); */
-    /* transition: all 250ms ease-in-out;
-    background: black; */
-    /* display: none; */
-}
-
 .menu-toggle a {
-border-bottom: 1px solid grey;
+    border-bottom: 1px solid grey;
 	display: inline-block;
 	font-size: 40px;
 	width: 100%;
@@ -155,7 +141,7 @@ h2 {
 label[for="toggle"] {
 	/*position the menu so that it doesn't slide off screen when we open it*/
 	position: fixed;
-	top: 10px;
+	top: 0;
 	right: 10px;
 	color: white;
 	z-index: 10;
