@@ -12,18 +12,7 @@ body, h1, h2, h3, h4, nav, header, ul, li, a, p {
     margin: 0;
     /* padding: 0; */
 }
-/* 
-input[type="checkbox"]{
-    position: absolute;
-    top: 10px;
-    right: 0;
-    height: 50px;
-    width: 50px;}
 
-    input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-} */
 
 nav .fa-bars {
     display: none;
@@ -77,7 +66,7 @@ header {
 
 nav {
     padding-top: 25px;     
-        text-shadow: 2px 2px black;
+    text-shadow: 2px 2px black;
 }
 
 li:hover {
@@ -94,7 +83,7 @@ h1, h3, h4 {
 .menu-toggle a {
     border-bottom: 1px solid grey;
 	display: inline-block;
-	font-size: 40px;
+	/* font-size: 2rem; */
 	width: 100%;
 	padding: 20px;
 	transition: all 0.3s;}
@@ -105,9 +94,6 @@ input[type="checkbox"]:checked + #sidebar {
     right: 0;
 }
 
-.menu-toggle a {
-    padding: 3% 5%;
-}
 
 .menu-toggle li {
     padding: 5%;
@@ -147,6 +133,15 @@ label[for="toggle"] {
 	z-index: 10;
 }
 
+label:hover {
+    color: #213C28;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
 #sidebar {
 	background: black;
 	position: fixed;
@@ -154,7 +149,7 @@ label[for="toggle"] {
 	width: 30%; /*note how width and right are the same values*/
 	right: -30%; /* Off the screen as wide as you are */
 	top: 50px;
-	height: 100%;
+	/* height: 100%; */
     transition: all 0.5s; 
 }
 
@@ -172,17 +167,8 @@ header ul li {
 
 /* hidden icons */
 
-.hidden-icons .fab {
-    /* float: right; */
-    /* margin-bottom: 5px; */
-    /* padding-bottom: 5px; */
-    /* padding: 5px; */
-    /* display: inline; */
-}
 
-.hidden-icons {
-    /* position: relative; */
-}
+
 
 .hidden-icons i:hover {
     color: #213C28;
@@ -191,13 +177,10 @@ header ul li {
 }
 
 .hidden-icons i {
-    /* display: block; */
     font-size: 3rem;
     position: absolute;
     text-shadow: 2px 2px black;
     position: fixed;
-    /* top: 0;
-    right: 0; */
 }
 
  .fa-twitter {
@@ -224,11 +207,6 @@ header ul li {
     right: 3%;
 }
 
-.fa-twitter, .fa-snapchat-ghost, .fa-facebook-f, .fa-instagram {
- /* float: right;    */
- /* margin-bottom: 5px; */
-}
-
 /* STYLING FOR FIRST SECTION (GALLERY) */
 
 .new-friends {
@@ -252,10 +230,7 @@ h3 {
     float: left;
     padding: 0 1%;
 }
-/* 
-.gallery img:nth-of-type(1), .gallery img:nth-of-type(3){
-    padding-left: 0px;
-}  */
+
 
 .more-about img {
     float: left;
@@ -290,7 +265,7 @@ h3 {
     font-weight: normal;
     text-align: center;
     line-height: 29px;
-    /* margin-bottom: 40px; */
+    /* width: 100%; */
 
 }
 
@@ -312,7 +287,7 @@ section .read-more {
     font-weight: normal;
     text-align: center;
     line-height: 29px;
-    /* padding-top: 30px; */
+    /* width: 100%; */
 
 }
 
@@ -520,6 +495,7 @@ input[type="email"] {
     .more-about .read-more {
         /* text-align: center; */
         /* margin: 0 auto; */
+        margin-bottom: 5%;
     }
 
     .bobby-and-bella-text, .marco-text {
@@ -578,6 +554,17 @@ span.read-more {
 
 }
 
+.more-about .read-more {
+    margin: 0 37.5%;
+            margin-bottom: 5%;
+
+    
+}
+
+section .read-more {
+    margin: 0 37.5%;
+}
+
 .bobby-and-bella, .marco {
     text-align: center;
 }
@@ -612,7 +599,9 @@ span.read-more {
 
 @media (max-width: 650px) {
 header {
-    height: 75vh;
+    background-image: url(assets/mobile-version.png);
+    height: 60vh;
+    background-position: top center;
     background-repeat: no-repeat;
     /* background-position-x: left 50%; */
 }
@@ -632,8 +621,8 @@ ul {
 
 header h2 {
     padding: 30px 0;
-    width: 46%;
-    font-size: 6rem;
+    width: 50%;
+    font-size: 5.5rem;
 }
 
 .wrapper {
@@ -686,6 +675,7 @@ input[type="email"] {
     padding: 0;
     margin: 0;
 }
+
 }
 @media (max-width: 500px) {
 header ul {
@@ -710,7 +700,8 @@ nav {
 }
 
 input[type="submit"] {
-    /* padding: 25% 25%; */
     margin: 0 23.5%;
 }
+
+
 }
