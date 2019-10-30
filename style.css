@@ -492,7 +492,7 @@ input[type="email"] {
     }
 
     .subscribe {
-    margin: 0 36%;
+    margin: 0 27%;
     }
 
 }
@@ -504,6 +504,11 @@ input[type="email"] {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .subscribe {
+    margin: 0 37%;
+    }
+
 
     h1 {
         width: 100%;
@@ -599,5 +604,9 @@ input[type="email"] {
     header h2 {
         font-size: 3.6rem;
 
+    }
+
+    .subscribe {
+    margin: 0 29%;
     }
 }
