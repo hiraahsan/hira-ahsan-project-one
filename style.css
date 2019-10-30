@@ -10,7 +10,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 body, h1, h2, h3, h4, nav, header, ul, li, a, p {
     margin: 0;
-    /* padding: 0; */
 }
 
 
@@ -69,10 +68,7 @@ nav {
     text-shadow: 2px 2px black;
 }
 
-li:hover {
-    color: #116500;
-    /* text-shadow: 1px 1px white; */
-}
+
 
 h1, h3, h4 {
     font-family: 'Offside', cursive;
@@ -83,14 +79,11 @@ h1, h3, h4 {
 .menu-toggle a {
     border-bottom: 1px solid grey;
 	display: inline-block;
-	/* font-size: 2rem; */
 	width: 100%;
 	padding: 20px;
 	transition: all 0.3s;}
 
 input[type="checkbox"]:checked + #sidebar {
-    /* transform: translateX(0); */
-    /* z-index: 10; */
     right: 0;
 }
 
@@ -99,18 +92,12 @@ input[type="checkbox"]:checked + #sidebar {
     padding: 5%;
 }
 
-/* nav .fa-bars:hover .menu-toggle, 
-nav .fa-bars:focus .menu-toggle {
-    display: block;
-} */
 
 h1 {
     font-size: 2rem;
     float: left;
     padding-left: 6%;
-    /* padding-left: 68px;  */
-    /* font-weight: normal; */
-    /* width: 20%; */
+
 }
 
 h2 {
@@ -125,7 +112,6 @@ h2 {
 }
 
 label[for="toggle"] {
-	/*position the menu so that it doesn't slide off screen when we open it*/
 	position: fixed;
 	top: 0;
 	right: 10px;
@@ -133,10 +119,7 @@ label[for="toggle"] {
 	z-index: 10;
 }
 
-label:hover {
-    color: #213C28;
-    cursor: pointer;
-}
+
 
 input[type="checkbox"] {
     display: none;
@@ -146,8 +129,8 @@ input[type="checkbox"] {
 	background: black;
 	position: fixed;
 	z-index: 10;
-	width: 30%; /*note how width and right are the same values*/
-	right: -30%; /* Off the screen as wide as you are */
+	width: 30%; 
+	right: -30%; 
 	top: 50px;
 	/* height: 100%; */
     transition: all 0.5s; 
@@ -170,11 +153,7 @@ header ul li {
 
 
 
-.hidden-icons i:hover {
-    color: #213C28;
-    /* background: white;; */
-    /* border: white 1px solid; */
-}
+
 
 .hidden-icons i {
     font-size: 3rem;
@@ -269,11 +248,7 @@ h3 {
 
 }
 
-.more-about .read-more:hover {
-    background: white;
-    color: #116500;
-    border: 1px solid #116500;
-}
+
 
 /* make DRY */
 
@@ -291,15 +266,7 @@ section .read-more {
 
 }
 
-section .read-more:hover {
-    background: #116500;
-    color: white;
-    border: 1px solid white;
-}
 
-section p {
-    /* margin-bottom: 30px; */
-}
 
 /* STYLING FOR HEADING TAGS */
 
@@ -328,12 +295,6 @@ h3 {
     float: left;
     width: 50%;
     padding: 7.5%;    
-/* margin: 5% 5%; */
-    /* padding: 8% 8%; */
-    /* margin: 0 auto; */
-    /* padding: 25% 25%; */
-    /* padding: 50px 20px; */
-    /* text-align: center; */
 }   
 
 .bobby-and-bella-text p, .marco-text p {
@@ -343,8 +304,7 @@ h3 {
 .bobby-and-bella img {
     float: right;
     width: 50%;
-    /* white-space: nowrap; */
-    /* overflow-x: scroll; */
+
 }
 
 .marco img, .marco-text {
@@ -353,26 +313,18 @@ h3 {
 
 }
 
-.marco-text {
-    /* padding: 10% 8%; */
 
-}
 
 /* icons styling */
 
 .icons {
     background: #D6F1E4;
-    /* color: #116500; */
     padding: 50px;    
     color: #2C2D2C;
     text-align: center;
-    /* display: inline-block; */
-    /* float: left; */
 }
 
-.icons i:hover {
-    color: white;
-}
+
 
 
 
@@ -381,7 +333,6 @@ h3 {
 }
 
 .jobs, .gift, .events {
-    /* background: #D6F1E4; */
     float: left;
     width: 33%;
 }
@@ -393,14 +344,39 @@ h3 {
 
 .fab {
     font-size: 2rem;
-    /* line-height: 50pxs; */
-    /* margin-bottom: 5%; */
 }
 
 /* Hover states */
+label:hover {
+    color: #213C28;
+    cursor: pointer;
+}
+.more-about .read-more:hover {
+    background: white;
+    color: #116500;
+    border: 1px solid #116500;
+}
+li a:hover {
+    text-decoration: underline #116500;
+    text-underline-position: below;
+}
+
+section .read-more:hover {
+    background: #116500;
+    color: white;
+    border: 1px solid white;
+}
 
 .read-more:hover {
     background: 
+}
+
+.hidden-icons i:hover {
+    color: #213C28;
+
+}
+.icons i:hover {
+    color: white;
 }
 
 /* FOOTER STYLES */
@@ -575,21 +551,6 @@ section .read-more {
         text-align: left;
     }
 
-    .panda-image img {
-        /* position: absolute;
-        top: 0;
-        left: 0;
-        margin: 10% auto; */
-        /* float: left; */
-        /* margin: 2%; */
-        /* right: 0; */
-        /* bottom: 0; */
-    }
-
-    .panda-image {
-        /* position: relative; */
-    }
-
     .hidden-icons {
         display: none;
     }
@@ -601,14 +562,12 @@ section .read-more {
 header {
     background-image: url(assets/mobile-version.png);
     height: 60vh;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
-    /* background-position-x: left 50%; */
 }
 
 h1 {
     width: 100%;
-    /* margin: 0 auto; */
     text-align: center;
     padding: 0;
 }
@@ -635,11 +594,9 @@ header h2 {
 }
 
 .jobs, .gift, .events {
-    /* background: #D6F1E4; */
     clear: both;    
     width: 100%;
     margin: 30px auto;
-    /* font-size: .2rem; */
 }
 
 h4 {
@@ -652,7 +609,6 @@ h4 {
 }
 
 .email {
-    /* clear: both; */
     width: 100%;
     text-align: center;
 }
@@ -688,7 +644,6 @@ h1 {
 
 nav .fa-bars {
     display: inline-block;
-    /* float: right; */
     position: absolute;
     top: 20px;
     right: 0;
