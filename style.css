@@ -51,7 +51,7 @@ body {
 
 header {
     background-image: url(assets/header-image-2.jpg);
-    height: 75vh;
+    height: 100vh;
     max-width: 100%;
     background-size: cover;
     background-position: center;
@@ -520,7 +520,7 @@ input[type="email"] {
     header h2 {
         padding: 30px 0;
         width: 50%;
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
 
     .wrapper {
@@ -594,5 +594,10 @@ input[type="email"] {
 
     nav {
         position: relative;
+    }
+
+    header h2 {
+        font-size: 3.6rem;
+
     }
 }
