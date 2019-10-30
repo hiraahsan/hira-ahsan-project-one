@@ -12,11 +12,6 @@ body, h1, h2, h3, h4, nav, header, ul, li, a, p {
     margin: 0;
 }
 
-
-nav .fa-bars {
-    display: none;
-}
-
 ul, li {
     list-style: none;
 }
@@ -34,6 +29,7 @@ color: inherit;
 img {
     max-width: 100%;
 }
+
 /* BASE STYLES */
 
 html {
@@ -60,7 +56,6 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
-
 }
 
 nav {
@@ -68,36 +63,15 @@ nav {
     text-shadow: 2px 2px black;
 }
 
-
-
 h1, h3, h4 {
     font-family: 'Offside', cursive;
-        font-weight: normal;
-
+    font-weight: normal;
 }
-
-.menu-toggle a {
-    border-bottom: 1px solid grey;
-	display: inline-block;
-	width: 100%;
-	padding: 20px;
-	transition: all 0.3s;}
-
-input[type="checkbox"]:checked + #sidebar {
-    right: 0;
-}
-
-
-.menu-toggle li {
-    padding: 5%;
-}
-
 
 h1 {
     font-size: 2rem;
     float: left;
-    padding-left: 6%;
-
+    padding-left: 5%;
 }
 
 h2 {
@@ -110,6 +84,31 @@ h2 {
     padding-left: 30px;
     font-weight: normal;
 }
+
+
+/* TOGGLE BAR STYLES */
+
+nav .fa-bars {
+    display: none;
+}
+
+.menu-toggle a {
+    border-bottom: 1px solid grey;
+	display: inline-block;
+	width: 100%;
+	padding: 20px;
+    transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked + #sidebar {
+    right: 0;
+}
+
+.menu-toggle li {
+    padding: 5%;
+}
+
+
 
 label[for="toggle"] {
 	position: fixed;
@@ -150,40 +149,29 @@ header ul li {
 
 /* hidden icons */
 
-
-
-
-
-
 .hidden-icons i {
     font-size: 3rem;
     position: absolute;
     text-shadow: 2px 2px black;
     position: fixed;
+    right: 3%;
+
 }
 
- .fa-twitter {
-    position: absolute;
+.fa-twitter {
     top: 38%;
-    right: 3%;
 }
 
 .fa-snapchat-ghost {
-    position: absolute;
     top: 32%;
-    right: 3%;
 }
 
 .fa-instagram {
-    position: absolute;
     top: 20%;
-    right: 3%;
 }
 
 .fa-facebook-f {
-    position: absolute;
     top: 26%;
-    right: 3%;
 }
 
 /* STYLING FOR FIRST SECTION (GALLERY) */
@@ -195,6 +183,7 @@ header ul li {
 
 h3 {
     font-size: 4.2rem;
+    color: #116500;
 }
 
 .new-friends-h3 {
@@ -205,7 +194,6 @@ h3 {
 
 .gallery img {
     width: calc(100% / 3);
-    /* margin: 0; */
     float: left;
     padding: 0 1%;
 }
@@ -225,57 +213,33 @@ h3 {
     float: left;
     width: 70%;
     padding: 3% 0 3% 3%;
-    /* margin: 1% 2%; */
 }
 
 .more-about-text p {
     padding: 2% 0;
 }
 
-/* BUTTON STYLES  */
+/* READ MORE STYLES  */
+
+.read-more {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: 'Offside', cursive;
+    text-decoration-style: none;
+    font-weight: normal;
+    text-align: center;
+    line-height: 29px;
+}
 
 .more-about .read-more {
     background: #116500;
-    /* padding: 5px 10px; */
-    text-transform: uppercase;
     color: white;
-    text-decoration-style: none;
-    font-family: 'Offside', cursive;
-    font-weight: normal;
-    text-align: center;
-    line-height: 29px;
-    /* width: 100%; */
-
 }
-
-
-
-/* make DRY */
 
 section .read-more {
     background: white;
-    padding: 5px 10px;
-    text-transform: uppercase;
     color: #116500;
-    text-decoration-style: none;
-    font-family: 'Offside', cursive;
-    font-weight: normal;
-    text-align: center;
-    line-height: 29px;
-    /* width: 100%; */
-
 }
-
-
-
-/* STYLING FOR HEADING TAGS */
-
-h3 {
-    color: #116500;
-    /* text-align: center; */
-}
-
-
 
 /* 2*2 section */
 
@@ -286,9 +250,6 @@ h3 {
 
 .bobby-and-bella, .marco {
         background-color: #213C28;
-        /* padding: 25% 25%; */
-        /* float: left; */
-        /* width: 50%; */
 }
 
 .bobby-and-bella-text, .marco-text {
@@ -304,16 +265,12 @@ h3 {
 .bobby-and-bella img {
     float: right;
     width: 50%;
-
 }
 
 .marco img, .marco-text {
     float: left;
     width: 50%;
-
 }
-
-
 
 /* icons styling */
 
@@ -323,10 +280,6 @@ h3 {
     color: #2C2D2C;
     text-align: center;
 }
-
-
-
-
 
 .icons h4 {
     color: #116500;
@@ -346,7 +299,8 @@ h3 {
     font-size: 2rem;
 }
 
-/* Hover states */
+/* Hover/active states */
+
 label:hover {
     color: #213C28;
     cursor: pointer;
@@ -356,8 +310,8 @@ label:hover {
     color: #116500;
     border: 1px solid #116500;
 }
-li a:hover {
-    text-decoration: underline #116500;
+li:hover, li:active {
+    text-decoration: underline;
     text-underline-position: below;
 }
 
@@ -367,9 +321,6 @@ section .read-more:hover {
     border: 1px solid white;
 }
 
-.read-more:hover {
-    background: 
-}
 
 .hidden-icons i:hover {
     color: #213C28;
@@ -378,6 +329,11 @@ section .read-more:hover {
 .icons i:hover {
     color: white;
 }
+
+.subscribe:active {
+    background: darkred;
+}
+.
 
 /* FOOTER STYLES */
 
@@ -388,38 +344,32 @@ footer {
 footer h3 {
     color: white;
     font-size: 2.5rem;
-
-
 }
 
 .footer-content {
     background-color: #213C28;
-    padding: 5% 2%;
-    /* text-align: center; */
+    width: 100%;
+    padding: 5% 0;
 }
 
 
 .email {
-    float: left;
     width: 40%;
 }
 
 .contact {
-    float: left;
     width: 24%;
 }
 
-    .email, .contact, .footer-nav {
-        /* padding: 0 3%; */
-        margin: 0 3%;
-    }
+.email, .contact, .footer-nav {
+    float: left;
+    margin: 0 3%;
+}
 
 .footer-nav {
-    float: left;
     width: 15%;
     font-family: 'Offside', cursive;
     text-transform: lowercase;
-    /* padding-top: 20px; */
 }
 
 .subscribe {
@@ -444,64 +394,48 @@ input[type="email"] {
 @media (max-width: 1195px) {
 
     .bobby-and-bella-text, .marco-text {
-        padding: 2.5%;}
-
+        padding: 2.5%;
+    }
 }
 
 @media (max-width: 900px) {
     html {
         font-size: 57.5%;
     }
-    .footer-nav {
-        /* float: none; */
-        /* text-align: center; */
+
+
+    .bobby-and-bella-text, .marco-text {
+        padding: 2%;
     }
-
-     .bobby-and-bella-text, .marco-text {
-        padding: 2%;}
     
-
     .more-about img {
         display: none;
     }
 
     .more-about-text {
         width: 100%;
-    }
-    .more-about .read-more {
-        /* text-align: center; */
-        /* margin: 0 auto; */
-        margin-bottom: 5%;
+        text-align: left;
     }
 
-    .bobby-and-bella-text, .marco-text {
-        padding: 3% 2%;
+    .more-about .read-more {
+        margin-bottom: 5%;
     }
 
     .footer-content {
         padding: 3% 1%;
     }
 
-    .email, .contact, .footer-nav {
-        /* padding: 0 3%; */
-        /* margin: 0 3%; */
-    }
-
     input[type="email"] {
         width: 100%;
     }
 
-span.read-more {
-    display: inline-block;
-    /* text-align: center; */
-}
-.more-about-text {
-    text-align: left;
-}
+    span.read-more {
+        display: inline-block;
+    }
 
-.more-about {
-    text-align: center;
-}
+    .more-about {
+        text-align: center;
+    }
 
 }
 
@@ -516,7 +450,6 @@ span.read-more {
         margin: 20px auto;
     }
 
-
     .bobby-and-bella-text, .bobby-and-bella img {
         width: 100%;
         float: none;
@@ -527,27 +460,24 @@ span.read-more {
     .marco img, .marco-text {
     clear: float;
     width: 100%;
-
-}
-
-.more-about .read-more {
-    margin: 0 37.5%;
-            margin-bottom: 5%;
-
     
-}
+    }
 
-section .read-more {
-    margin: 0 37.5%;
-}
+    .more-about .read-more {
+        margin: 0 37.5%;
+        margin-bottom: 5%;
+    }
 
-.bobby-and-bella, .marco {
-    text-align: center;
-}
+    section .read-more {
+        margin: 0 37.5%;
+    }
+
+    .bobby-and-bella, .marco {
+        text-align: center;
+    }
 
 
     .bobby-and-bella-text, .marco-text {
-        /* margin-top: 50px; */
         text-align: left;
     }
 
@@ -555,6 +485,9 @@ section .read-more {
         display: none;
     }
 
+    .subscribe {
+    margin: 0 36%;
+    }
 
 }
 
@@ -605,7 +538,6 @@ h4 {
 
 .icons .fas {
         font-size: 5rem;
-
 }
 
 .email {
@@ -614,7 +546,12 @@ h4 {
 }
 
 input[type="email"] {
-    width: 90%;
+    width: 92.5%;
+    margin-bottom: 2%;
+}
+
+.footer-content {
+    width: 100%;
 }
 
 .contact, .footer-nav {
@@ -649,14 +586,7 @@ nav .fa-bars {
     right: 0;
 }
 
-
 nav {
     position: relative;
 }
-
-input[type="submit"] {
-    margin: 0 23.5%;
-}
-
-
 }
